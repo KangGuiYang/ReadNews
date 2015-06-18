@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10.0dip" >
+
+    <LinearLayout
+        android:id="@+id/drug_list_item_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/imageView_news"
+            android:layout_width="110.0dip"
+            android:layout_height="80.0dip"
+            android:layout_gravity="center_vertical" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5.0dip"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/news_title"
+                android:layout_width="200.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3.0dip"
+                android:layout_marginTop="5.0dip"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:textColor="#ff010101"
+                android:textSize="16.0sp" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/drug_list_item_PType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="end"
+                    android:maxWidth="120.0dip"
+                    android:singleLine="true"
+                    android:textColor="#ff6e6e6e"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@+id/drug_list_item_views"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:singleLine="true"
+                    android:textColor="#ff6e6e6e"
+                    android:textSize="15.0sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/drug_list_item_factory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20.0dip"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textColor="#ff6e6e6e"
+                android:textSize="14.0sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

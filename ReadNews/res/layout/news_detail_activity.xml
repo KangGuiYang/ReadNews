@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/titlebar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/main_top_layout" />
+<RelativeLayout
+        android:id="@+id/bannercontainer"
+        android:layout_width="fill_parent"
+        android:layout_below="@id/titlebar"
+        android:layout_height="wrap_content" >
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/linearlayout_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bannercontainer"
+        android:background="@color/white_color"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/black_color"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/blue"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/webView_news"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/linearlayout_title"
+        android:layout_centerHorizontal="true" />
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        layout="@layout/progressbar" />
+
+</RelativeLayout>
